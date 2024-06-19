@@ -1,0 +1,92 @@
+/* src/layout/Landing.css */
+.landing-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .landing-header {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  .landing-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .landing-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .landing-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .supporting-image,
+  .supporting-video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  /* src/profile/Profile.css */
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .profile-container p {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
+
+  /* client/components/profiles/Profile.css */
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+.profile-card h2 {
+  margin-top: 0;
+}
+
+.profile-card p {
+  margin: 5px 0;
+}
+
+/* client/components/profiles/Profiles.css */
+
+.profiles-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profiles-list .profile-card {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+}
