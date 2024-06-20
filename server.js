@@ -23,8 +23,8 @@ app.use('/api/imagesUpload/', require('./routes/api/cloudinaryUpload'));
 const PORT = process.env.PORT || 5000;
 
 // Step 1:
-app.use(express.static(path.resolve(__dirname, './client/build')));
-// app.use(express.static('./client/build'));
+// app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static('./client/build'));
 
 
 // Step 2:
