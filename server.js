@@ -28,13 +28,13 @@ app.use(express.static('./client/build'));
 
 
 // Step 2:
-app.get('*', function (request, response) {
-	response.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
-});
-// app.get("*", (req, res) => {
-// 	res.sendFile(path.resolve(__dirname, "client", "build",     
-// 	"index.html"));
-//  });
+// app.get('*', function (request, response) {
+// 	response.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+// });
+app.get("*", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "client", "build",     
+	"index.html"));
+ });
 
 app.listen(PORT, () => {
 	console.log(`Server started on port ${PORT}`);
